@@ -9,36 +9,9 @@
         <link name="mico_link_finger_2"/>
         <link name="mico_link_finger_tip_2"/>
     </group>
-  <KinBody>
-    <!-- data for the orcdchomp module -->
-    <orcdchomp>
-      <spheres>
-        <!-- shoulder spheres -->
-        <sphere link="mico_link_1"      pos=" 0.22  0.14 0.346" radius="2" />
-        <!-- upper arm spheres -->
-        <sphere link="mico_link_2"      pos=" 0.0   0.0  0.2 " radius="2.00" />
-        <sphere link="mico_link_2"      pos=" 0.0   0.0  0.3 " radius="2.00" />
-        <sphere link="mico_link_2"      pos=" 0.0   0.0  0.4 " radius="2.00" />
-        <sphere link="mico_link_2"      pos=" 0.0   0.0  0.5 " radius="2.00" />
-        <!-- elbow knuckle spheres -->
-        <sphere link="mico_link_3"      pos="0.0  0.0  0.0" radius="2.00" />
-        <!-- forearm spheres -->
-        <sphere link="mico_link_4"      pos="0.0 0.0  0.2 " radius="2.00" />
-        <sphere link="mico_link_4"      pos="0.0 0.0  0.1 " radius="2.00" />
-        <sphere link="mico_link_4"      pos="0.0 0.0  0.3 " radius="2.00" />
-        <!-- hand sphere -->
-        <sphere link="mico_link_6"      pos=" 0.0   0.0  0.1 " radius="2.00" />
-        <!-- finger spheres (inner links) -->
-        <sphere link="mico_link_finger1" pos=" 0.05  -0.01 0.0 " radius="2.00" />
-        <sphere link="mico_link_finger1" pos=" 0.05  -0.01 0.0 " radius="2.00" />
-        <sphere link="mico_link_finger1" pos=" 0.05  -0.01 0.0 " radius="2.00" />
-        <!-- finger spheres (tip links) -->
-        <sphere link="mico_link_finger2" pos=" 0.05   0.0  0.0 " radius="2.00" />
-        <sphere link="mico_link_finger2" pos=" 0.05   0.0  0.0 " radius="2.00" />
-        <sphere link="mico_link_finger2" pos=" 0.05   0.0  0.0 " radius="2.00" />
-      </spheres>
-    </orcdchomp>
-  </KinBody>
+    <link_sphere_approximation link="mico_link_1">
+    	<sphere center="0.045 0.0 0.55" radius="0.06"/>
+    </link_sphere_approximation>
 
     <end_effector name="Mico" group="hand" parent_link="mico_end_effector"
                   parent_group="Mico"/>
