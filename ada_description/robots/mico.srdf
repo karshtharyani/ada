@@ -10,7 +10,25 @@
         <link name="mico_link_finger_tip_2"/>
     </group>
     <link_sphere_approximation link="mico_link_1">
-    	<sphere center="-0.0038 0.0 -0.0364" radius="0.06"/>
+    	<sphere center=" 0.0 0.0 0.0" radius="0.06"/>
+    	<sphere center=" 0.0 0.0 -0.03" radius="0.06"/>
+    </link_sphere_approximation>
+    <link_sphere_approximation link="mico_link_2">
+    	<sphere center=" 0.0 0.0 0.0" radius="0.06"/>
+    </link_sphere_approximation>
+    <link_sphere_approximation link="mico_link_3">
+    	<sphere center=" 0.0 0.0 0.0" radius="0.06"/>
+    	<sphere center=" 0.03 -0.1 0.03" radius="0.06"/>
+    	<sphere center=" 0.03 -0.20 0.03" radius="0.06"/>
+    </link_sphere_approximation>
+    <link_sphere_approximation link="mico_link_4">
+    	<sphere center=" 0.0 -0.01 0.0" radius="0.06"/>
+    </link_sphere_approximation>
+    <link_sphere_approximation link="mico_link_5">
+    	<sphere center=" 0.0 0.0 0.0" radius="0.06"/>
+    </link_sphere_approximation>
+    <link_sphere_approximation link="mico_link_hand">
+    	<sphere center=" 0.0 0.0 0.0" radius="0.06"/>
     </link_sphere_approximation>
 
     <end_effector name="Mico" group="hand" parent_link="mico_end_effector"
