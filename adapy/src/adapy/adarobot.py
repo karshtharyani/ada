@@ -98,6 +98,7 @@ class ADARobot(Robot):
         # Initialize the default planning pipeline.
         from prpy.planning import Sequence, Ranked, FirstSupported
         from prpy.planning import (
+	    CHOMPPlanner,
             BiRRTPlanner,
             CBiRRTPlanner,
             IKPlanner,
